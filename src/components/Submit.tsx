@@ -1,4 +1,4 @@
-import './Submit.css'
+// import './Submit.css'
 import { localStorageKey } from '../types'
 
 const Submit = () => {

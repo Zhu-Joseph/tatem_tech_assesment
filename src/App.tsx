@@ -1,7 +1,7 @@
 import { FormEvent, useState } from 'react';
 import './App.css'
-import FormInputs from '../components/FormInputs';
-import { FormData, localStorageKey } from '../types';
+import FormInputs from './components/FormInputs';
+import { FormData, localStorageKey } from './types';
 
 function App() {
   // If localStorage has formData submitted, the page is redirected
