@@ -4,6 +4,10 @@ import FormInputs from '../components/FormInputs';
 import { FormData, localStorageKey } from '../types';
 
 function App() {
+  // If localStorage has formData submitted, the page is redirected
+  if(localStorage.getItem('formData')) {
+    window.location.href = 'submitted_page.html'
+  } 
 
   const [formData, setFormData] = useState<FormData>({
     firstName: '',
@@ -22,9 +26,6 @@ function App() {
       email: '',
       password: ''
     })
-
-    // Once data is submitted, the page is redirected
-    window.location.href = 'submitted_page.html'
   }
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
