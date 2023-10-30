@@ -6,7 +6,7 @@ import { FormData, localStorageKey } from '../types';
 function App() {
   // If localStorage has formData submitted, the page is redirected
   if(localStorage.getItem('formData')) {
-    window.location.href = 'submitted_page.html'
+    window.location.pathname = '/submitted'
   } 
 
   const [formData, setFormData] = useState<FormData>({
